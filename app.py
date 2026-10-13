@@ -39,35 +39,24 @@ POST_INTERVAL = max(
 REQUEST_TIMEOUT = 25
 
 CYBER_GIFS = [
-    "https://media.giphy.com/media/w4zX4PfkQmZ4xeG7ny/giphy.gif",
-    "https://media.giphy.com/media/WWIvZaHUJEOWi5UhGV/giphy.gif",
-    "https://media.giphy.com/media/xTiTnMhJTwNHChdTZS/giphy.gif",
-    "https://media.giphy.com/media/W23kW9Z07sQ3p7xS5j/giphy.gif",
+    "https://media.giphy.com/media/TFPdmm3rdzeZ0kP3zG/giphy.gif",
+    "https://media.giphy.com/media/lMwHQ7201A72B6JqOW/giphy.gif",
+    "https://media.giphy.com/media/WfkmFXSjRYbDjtohJj/giphy.gif",
+    "https://media.giphy.com/media/26FPKhUtNG3TW74f6/giphy.gif",
+    "https://media.giphy.com/media/IXnygGeB6LPPi/giphy.gif",
+    "https://media.giphy.com/media/VGwTq3G6a39cI/giphy.gif",
+    "https://media.giphy.com/media/RDZo7znAdn2u7sAcWH/giphy.gif",
+    "https://media.giphy.com/media/2i7jspnRBYgg6v4Oki/giphy.gif",
+    "https://media.giphy.com/media/6NjTciHDVFh11crDfY/giphy.gif",
+    "https://media.giphy.com/media/qQgKLMJvWEZKI2Hfvo/giphy.gif",
 ]
 
 # =========================================================
 # KNOWLEDGE BASE
-# Account recovery, VPN, ethical hacking, programming
+# Facebook/Instagram Recovery & Security on Top
 # =========================================================
 
 POSTS = [
-    {
-        "category": "🛡️ VPN & PRIVACY",
-        "title": "VPN কী এবং কীভাবে নিরাপদে ব্যবহার করবেন?",
-        "content": (
-            "VPN আপনার ডিভাইস ও VPN সার্ভারের মধ্যে এনক্রিপ্টেড "
-            "সংযোগ তৈরি করতে পারে। তবে VPN আপনাকে সম্পূর্ণ "
-            "অদৃশ্য করে না এবং সব ধরনের ট্র্যাকিং বন্ধ করে না।\n\n"
-            "✅ বিশ্বস্ত VPN provider নির্বাচন করুন।\n"
-            "✅ Privacy policy ও logging policy পড়ুন।\n"
-            "✅ Kill switch এবং DNS leak protection দেখুন।\n"
-            "✅ অজানা ফ্রি VPN-এ সংবেদনশীল তথ্য দেবেন না।\n"
-            "✅ HTTPS ও two-factor authentication ব্যবহার করুন।"
-        ),
-        "tool": "Proton VPN / WireGuard",
-        "link": "https://www.wireguard.com/",
-        "safety": "নিজের ডিভাইস ও নেটওয়ার্কের নিরাপত্তায় ব্যবহার করুন।"
-    },
     {
         "category": "🔐 ACCOUNT RECOVERY",
         "title": "Facebook Disabled Account Recovery Guide",
@@ -116,6 +105,40 @@ POSTS = [
         "tool": "Meta Account Security",
         "link": "https://www.facebook.com/hacked",
         "safety": "অন্যের অ্যাকাউন্টে প্রবেশের চেষ্টা করবেন না।"
+    },
+    {
+        "category": "🔐 ACCOUNT SAFETY",
+        "title": "Suspended Account Appeal: Scam থেকে সাবধান",
+        "content": (
+            "কেউ যদি বলে টাকা দিলেই Facebook বা Instagram "
+            "অ্যাকাউন্ট নিশ্চিতভাবে ফিরিয়ে দেবে, সতর্ক থাকুন।\n\n"
+            "✅ অফিসিয়াল appeal flow ব্যবহার করুন।\n"
+            "✅ অ্যাকাউন্টের সঙ্গে যুক্ত ইমেইল সুরক্ষিত রাখুন।\n"
+            "✅ প্রয়োজনীয় notice ও case reference সংরক্ষণ করুন।\n"
+            "❌ Password, OTP বা session cookie শেয়ার করবেন না।\n"
+            "❌ ভুয়া support account-কে বিশ্বাস করবেন না।\n\n"
+            "Review-এর ফলাফল প্ল্যাটফর্মের সিদ্ধান্তের ওপর নির্ভর করে।"
+        ),
+        "tool": "Meta Help Center",
+        "link": "https://www.facebook.com/help/",
+        "safety": "শুধু বৈধ ও অফিসিয়াল recovery পদ্ধতি অনুসরণ করুন।"
+    },
+    {
+        "category": "🛡️ VPN & PRIVACY",
+        "title": "VPN কী এবং কীভাবে নিরাপদে ব্যবহার করবেন?",
+        "content": (
+            "VPN আপনার ডিভাইস ও VPN সার্ভারের মধ্যে এনক্রিপ্টেড "
+            "সংযোগ তৈরি করতে পারে। তবে VPN আপনাকে সম্পূর্ণ "
+            "অদৃশ্য করে না এবং সব ধরনের ট্র্যাকিং বন্ধ করে না।\n\n"
+            "✅ বিশ্বস্ত VPN provider নির্বাচন করুন।\n"
+            "✅ Privacy policy ও logging policy পড়ুন।\n"
+            "✅ Kill switch এবং DNS leak protection দেখুন।\n"
+            "✅ অজানা ফ্রি VPN-এ সংবেদনশীল তথ্য দেবেন না।\n"
+            "✅ HTTPS ও two-factor authentication ব্যবহার করুন।"
+        ),
+        "tool": "Proton VPN / WireGuard",
+        "link": "https://www.wireguard.com/",
+        "safety": "নিজের ডিভাইস ও নেটওয়ার্কের নিরাপত্তায় ব্যবহার করুন।"
     },
     {
         "category": "💻 ETHICAL HACKING",
@@ -192,7 +215,7 @@ POSTS = [
             "Python দিয়ে automation, web development, data analysis "
             "ও defensive security tools তৈরি করা যায়।\n\n"
             "শুরু করুন:\n"
-            "১. Variables, strings ও numbers।\n"
+            "১. Variables, strings ও numbers。\n"
             "২. If/else এবং loops।\n"
             "৩. Functions ও modules।\n"
             "৪. Lists, dictionaries ও sets।\n"
@@ -301,7 +324,7 @@ POSTS = [
             "• TCP handshake।\n"
             "• DNS request ও response।\n"
             "• TLS traffic-এর মৌলিক ধারণা।\n"
-            "• Network troubleshooting।\n\n"
+            "• Network troubleshooting。\n\n"
             "Capture করার আগে নেটওয়ার্কের মালিকের অনুমতি নিন।"
         ),
         "tool": "Wireshark",
@@ -315,7 +338,7 @@ POSTS = [
             "একটি সুন্দর responsive website তৈরিতে তিনটি মূল প্রযুক্তি "
             "গুরুত্বপূর্ণ:\n\n"
             "HTML: পেজের structure।\n"
-            "CSS: layout, color ও responsive design।\n"
+            "CSS: layout, color ও responsive design。\n"
             "JavaScript: interaction ও dynamic behavior।\n\n"
             "শুরুতে একটি portfolio, calculator বা personal dashboard "
             "তৈরি করুন। পরে API integration ও accessibility শিখুন।"
@@ -331,10 +354,10 @@ POSTS = [
             "Python দিয়ে repetitive কাজ স্বয়ংক্রিয় করা যায়।\n\n"
             "Project idea:\n"
             "• নিজের ফাইল গুছিয়ে রাখার script।\n"
-            "• Website uptime checker।\n"
-            "• CSV report generator।\n"
-            "• Telegram notification bot।\n"
-            "• নিজের server-এর log analyzer।\n\n"
+            "• Website uptime checker。\n"
+            "• CSV report generator。\n"
+            "• Telegram notification bot。\n"
+            "• নিজের server-এর log analyzer。\n\n"
             "Error handling, logging ও environment variables "
             "ব্যবহার করতে শিখুন।"
         ),
@@ -357,23 +380,6 @@ POSTS = [
         "tool": "OWASP ZAP",
         "link": "https://www.zaproxy.org/",
         "safety": "অনুমোদিত অ্যাপেই active testing করুন।"
-    },
-    {
-        "category": "🔐 ACCOUNT SAFETY",
-        "title": "Suspended Account Appeal: Scam থেকে সাবধান",
-        "content": (
-            "কেউ যদি বলে টাকা দিলেই Facebook বা Instagram "
-            "অ্যাকাউন্ট নিশ্চিতভাবে ফিরিয়ে দেবে, সতর্ক থাকুন।\n\n"
-            "✅ অফিসিয়াল appeal flow ব্যবহার করুন।\n"
-            "✅ অ্যাকাউন্টের সঙ্গে যুক্ত ইমেইল সুরক্ষিত রাখুন।\n"
-            "✅ প্রয়োজনীয় notice ও case reference সংরক্ষণ করুন।\n"
-            "❌ Password, OTP বা session cookie শেয়ার করবেন না।\n"
-            "❌ ভুয়া support account-কে বিশ্বাস করবেন না।\n\n"
-            "Review-এর ফলাফল প্ল্যাটফর্মের সিদ্ধান্তের ওপর নির্ভর করে।"
-        ),
-        "tool": "Meta Help Center",
-        "link": "https://www.facebook.com/help/",
-        "safety": "শুধু বৈধ ও অফিসিয়াল recovery পদ্ধতি অনুসরণ করুন।"
     }
 ]
 
@@ -406,7 +412,6 @@ class NonRepeatingPostQueue:
         self.queue = self.items[:]
         random.shuffle(self.queue)
 
-        # Avoid repeating the previous cycle's final topic immediately.
         if (
             len(self.queue) > 1
             and self.last_item is not None
@@ -457,9 +462,7 @@ def telegram_api(method, payload):
 
 def send_telegram_post(item):
     """
-    Send an optional GIF and then the complete formatted post.
-    The complete post is sent as a text message, avoiding the
-    smaller animation-caption character limit.
+    Send one GIF and then the complete formatted post per message.
     """
 
     title = html.escape(item["title"])
@@ -497,7 +500,6 @@ def send_telegram_post(item):
         "💡 <i>শিখুন • নিরাপদ থাকুন • দায়িত্বশীল হোন</i>"
     )
 
-    # GIF is optional; a GIF failure must not prevent the text post.
     gif_sent = False
     if CYBER_GIFS:
         selected_gif = random.choice(CYBER_GIFS)
@@ -518,7 +520,6 @@ def send_telegram_post(item):
         except Exception as exc:
             logger.warning("GIF delivery failed: %s", exc)
 
-    # Always attempt to send the full educational content.
     telegram_api("sendMessage", {
         "chat_id": CHAT_ID,
         "text": message,
@@ -581,7 +582,6 @@ def background_professional_security_engine():
                 engine_state["last_error"] = str(exc)[:500]
                 engine_state["status"] = "Error"
 
-        # Countdown is interruptible by the dashboard Start/Stop control.
         remaining = POST_INTERVAL
 
         while remaining > 0:
@@ -879,8 +879,6 @@ def start_engine_once():
         engine_thread.start()
 
 
-# Render runs app.py as a normal process. The WERKZEUG condition
-# also avoids starting the worker twice in Flask debug mode.
 if os.environ.get("WERKZEUG_RUN_MAIN") == "true" or (
     __name__ == "__main__"
 ):
@@ -896,4 +894,4 @@ if __name__ == "__main__":
         port=port,
         debug=False,
         use_reloader=False
-                )
+        )
