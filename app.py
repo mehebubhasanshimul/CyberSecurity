@@ -10,7 +10,7 @@ from datetime import datetime, timezone, timedelta
 from flask import Flask, render_template_string, request, redirect, url_for
 
 # =========================================================
-# CYBER TEAM HELP - ADVANCED KNOWLEDGE BOT
+# CYBER TEAM HELP - ADVANCED KNOWLEDGE CORE BOT
 # Single file: app.py
 # =========================================================
 
@@ -29,6 +29,7 @@ CHAT_ID = os.getenv(
 ).strip()
 
 GROUP_LINK = "https://t.me/shadow_joker_cyberteamhelp"
+PRIVATE_GROUP_LINK = "https://t.me/+DLEo8TQ1PjIzYzFl"
 DEVELOPER = "@SHADOW_JOKER_CTH"
 PROJECT_NAME = "CYBER TEAM HELP | Advanced Knowledge Core"
 
@@ -52,334 +53,117 @@ CYBER_GIFS = [
 ]
 
 # =========================================================
-# KNOWLEDGE BASE
-# Facebook/Instagram Recovery & Security on Top
+# BRAND NEW KNOWLEDGE BASE & TOOLS (NO OLD POSTS)
 # =========================================================
 
 POSTS = [
     {
-        "category": "🔐 ACCOUNT RECOVERY",
-        "title": "Facebook Disabled Account Recovery Guide",
+        "category": "🛡️ CTH EXCLUSIVE HUB",
+        "title": "Cyber Team Help All-in-One Web Dashboard",
         "content": (
-            "Facebook account disabled হলে প্রথমে লগইন করে "
-            "দেখুন review বা appeal option দেওয়া হয়েছে কি না।\n\n"
-            "১. অ্যাকাউন্টে দেখানো নির্দেশনা অনুসরণ করুন।\n"
-            "২. প্রয়োজন হলে নিজের পরিচয়পত্রের তথ্য সঠিকভাবে দিন।\n"
-            "৩. ইমেইল ও notification পরীক্ষা করুন।\n"
-            "৪. অফিসিয়াল Help Center ব্যবহার করুন।\n"
-            "৫. ভুয়া recovery service-কে টাকা বা password দেবেন না।\n\n"
-            "মনে রাখবেন: আপিল করলেই অ্যাকাউন্ট ফেরত পাওয়ার নিশ্চয়তা নেই।"
+            "আমাদের নিজস্ব তৈরি সম্পূর্ণ অল-ইন-ওয়ান সাইবার টুলস এবং "
+            "ইউটিলিটি ড্যাশবোর্ড থেকে প্রয়োজনীয় সেবা এক ক্লিকেই ব্যবহার করুন।\n\n"
+            "✅ এডভান্সড ইউটিলিটি ও অ্যানালিটিক্স টুলস।\n"
+            "✅ সম্পূর্ণ ডার্ক ও সাইবারস্পেস ইন্টারফেস।\n"
+            "✅ ফাস্ট রেসপন্স ও নিয়মিত ফিচার আপডেট।"
         ),
-        "tool": "Facebook Help Center",
-        "link": "https://www.facebook.com/help/",
-        "safety": "শুধু নিজের অ্যাকাউন্টের জন্য আবেদন করুন।"
+        "tool": "CTH All-in-One Hub Portal",
+        "link": "https://cyber-team-help-all-in-one.vercel.app/",
+        "safety": "অনুমোদিত ও বৈধ কাজের জন্য টুলস ব্যবহার করুন।"
     },
     {
         "category": "🔐 ACCOUNT RECOVERY",
-        "title": "Instagram Suspended Account Review",
+        "title": "Facebook Disabled & Identity Verification Fix 2026",
         "content": (
-            "Instagram account suspended হলে অ্যাপে লগইন করে "
-            "Appeal, Request Review অথবা প্রদর্শিত নির্দেশনা অনুসরণ করুন।\n\n"
-            "✅ নিজের ইমেইল ও ফোন নম্বরের অ্যাক্সেস রাখুন।\n"
-            "✅ অফিসিয়াল security notification যাচাই করুন।\n"
-            "✅ পরিচয় যাচাই চাইলে সঠিক তথ্য দিন।\n"
-            "✅ অ্যাকাউন্ট compromise হয়ে থাকলে secure করুন।\n"
-            "❌ কাউকে password বা login code দেবেন না।"
+            "আপনার ফেসবুক অ্যাকাউন্ট ডিসেবল বা লক হলে নিচের এডভান্সড গাইড ফলো করুন:\n\n"
+            "১. ব্রাউজার প্রাইভেট মোড/ছদ্মবেশী ট্যাব থেকে ফেসবুক আইডি লগইন করুন।\n"
+            "২. 'Request Review' পেজে সঠিক NID/Passport-এর উভয় পিঠের স্পষ্ট ছবি দিন।\n"
+            "৩. ফেসবুক সিকিউরিটি টিমের নোটিফিকেশন পর্যন্ত ধৈর্য্য ধরে অপেক্ষা করুন।\n"
+            "৪. কোনো ভুয়া রিকভারি এজেন্টকে টাকা বা পাসওয়ার্ড দিয়ে প্রতারিত হবেন না।"
         ),
-        "tool": "Instagram Help Center",
+        "tool": "Facebook Official Help Center",
+        "link": "https://www.facebook.com/help/",
+        "safety": "শুধুমাত্র নিজের অর্জিনাল অ্যাকাউন্টে ব্যবহার করুন।"
+    },
+    {
+        "category": "⚡ CTH UTILITY TOOLS",
+        "title": "Unlimited Text & Data Generator Web Tool",
+        "content": (
+            "ডেভেলপিং, স্ক্রিপ্টিং ও টেস্ট ডাটা ফিল করার জন্য আনলিমিটেড "
+            "টেক্সট ও ফরম্যাটিং দরকার হলে আমাদের এই টুলটি ট্রাই করুন।\n\n"
+            "• সুপারফাস্ট কাস্টম টেক্সট জেনারেশন।\n"
+            "• কোনো প্রকার পেজ রিলোড ছাড়াই ইনস্ট্যান্ট আউটপুট।"
+        ),
+        "tool": "Unlimited Text Generator Tool",
+        "link": "https://unlimited-text-generator-cth-2esh.vercel.app/",
+        "safety": "ডেভেলপমেন্ট ও এডিটিং পারপাসে ব্যবহারযোগ্য।"
+    },
+    {
+        "category": "🔐 ACCOUNT RECOVERY",
+        "title": "Instagram Suspended & Appeal Review Complete Guide",
+        "content": (
+            "ইনস্টাগ্রাম অ্যাকাউন্ট সাসপেন্ড হলে রিকভার করার সঠিক পদ্ধতি:\n\n"
+            "✅ অফিশিয়াল ইনস্টাগ্রাম অ্যাপ দিয়ে ইউজারনেম ও পাসওয়ার্ড দিয়ে ঢুকুন।\n"
+            "✅ স্ক্রিনে 'Appeal' অপশন আসলে আপনার অ্যাক্টিভ ইমেইল ও ফোন নম্বর দিন।\n"
+            "✅ সেলফি কোড (Handheld Selfie Code) চাইলে স্পষ্ট ও পরিষ্কার ছবি আপলোড করুন।\n"
+            "❌ কোনো আনঅফিশিয়াল এপিআই বা বট অ্যাপ দিয়ে লগইন করবেন না।"
+        ),
+        "tool": "Instagram Help Center Portal",
         "link": "https://help.instagram.com/",
-        "safety": "কোনো recovery agent-কে login code দেবেন না।"
+        "safety": "অফিশিয়াল অ্যাপ বা হেল্প সেন্টার ব্যবহার করা নিরাপদ।"
+    },
+    {
+        "category": "🛠️ SECURITY & ID TOOLS",
+        "title": "Link & ID Security Management Utilities",
+        "content": (
+            "আপনার সোশ্যাল মিডিয়া লিংক ও অ্যাকাউন্ট সিকিউরিটি চেক করতে "
+            "আমাদের এই নতুন ইউটিলিটি টুলসের সাহায্য নিতে পারেন।\n\n"
+            "🔍 লিংক অ্যানালাইসিস ও সেফটি চেকিং এক ক্লিকেই সম্পূর্ণ করুন।"
+        ),
+        "tool": "CTH Security Utility Tools",
+        "link": "https://link-to-id-hack-tolls-cth.vercel.app/",
+        "safety": "নিজের একাউন্ট সেফটি ও চেকিংয়ের জন্য ব্যবহার করুন।"
     },
     {
         "category": "🔐 ACCOUNT SECURITY",
-        "title": "Facebook বা Instagram Hack হলে করণীয়",
+        "title": "Facebook / Instagram Hacked Account Recovery Roadmap",
         "content": (
-            "নিজের অ্যাকাউন্টে অননুমোদিত প্রবেশের সন্দেহ হলে "
-            "দ্রুত নিরাপত্তা ব্যবস্থা নিন।\n\n"
-            "১. অফিসিয়াল account recovery পেজ ব্যবহার করুন।\n"
-            "২. ইমেইল অ্যাকাউন্টের password পরিবর্তন করুন।\n"
-            "৩. অচেনা session ও connected apps সরিয়ে দিন।\n"
-            "৪. Two-factor authentication চালু করুন।\n"
-            "৫. ইমেইল ও ফোন নম্বর ঠিক আছে কি না দেখুন।"
+            "যদি আপনার একাউন্টের ইমেইল বা পাসওয়ার্ড হ্যাকার পরিবর্তন করে ফেলে:\n\n"
+            "১. অনতিবিলম্বে Meta Secured Recovery Portal-এ প্রবেশ করুন।\n"
+            "২. 'My account is compromised' সিলেক্ট করে আগের ডিভাইস দিয়ে চেষ্টা করুন।\n"
+            "৩. প্রাইমারি ইমেইল রিকভার করে আগের বিশ্বস্ত ব্রাউজার থেকে আপিল জমা দিন।\n"
+            "৪. টু-ফ্যাক্টর অথেন্টিকেশন (2FA Authenticator App) অন রাখুন।"
         ),
-        "tool": "Meta Account Security",
+        "tool": "Meta Security Hacked Help Portal",
         "link": "https://www.facebook.com/hacked",
-        "safety": "অন্যের অ্যাকাউন্টে প্রবেশের চেষ্টা করবেন না।"
-    },
-    {
-        "category": "🔐 ACCOUNT SAFETY",
-        "title": "Suspended Account Appeal: Scam থেকে সাবধান",
-        "content": (
-            "কেউ যদি বলে টাকা দিলেই Facebook বা Instagram "
-            "অ্যাকাউন্ট নিশ্চিতভাবে ফিরিয়ে দেবে, সতর্ক থাকুন।\n\n"
-            "✅ অফিসিয়াল appeal flow ব্যবহার করুন।\n"
-            "✅ অ্যাকাউন্টের সঙ্গে যুক্ত ইমেইল সুরক্ষিত রাখুন।\n"
-            "✅ প্রয়োজনীয় notice ও case reference সংরক্ষণ করুন।\n"
-            "❌ Password, OTP বা session cookie শেয়ার করবেন না।\n"
-            "❌ ভুয়া support account-কে বিশ্বাস করবেন না।\n\n"
-            "Review-এর ফলাফল প্ল্যাটফর্মের সিদ্ধান্তের ওপর নির্ভর করে।"
-        ),
-        "tool": "Meta Help Center",
-        "link": "https://www.facebook.com/help/",
-        "safety": "শুধু বৈধ ও অফিসিয়াল recovery পদ্ধতি অনুসরণ করুন।"
-    },
-    {
-        "category": "🛡️ VPN & PRIVACY",
-        "title": "VPN কী এবং কীভাবে নিরাপদে ব্যবহার করবেন?",
-        "content": (
-            "VPN আপনার ডিভাইস ও VPN সার্ভারের মধ্যে এনক্রিপ্টেড "
-            "সংযোগ তৈরি করতে পারে। তবে VPN আপনাকে সম্পূর্ণ "
-            "অদৃশ্য করে না এবং সব ধরনের ট্র্যাকিং বন্ধ করে না।\n\n"
-            "✅ বিশ্বস্ত VPN provider নির্বাচন করুন।\n"
-            "✅ Privacy policy ও logging policy পড়ুন।\n"
-            "✅ Kill switch এবং DNS leak protection দেখুন।\n"
-            "✅ অজানা ফ্রি VPN-এ সংবেদনশীল তথ্য দেবেন না।\n"
-            "✅ HTTPS ও two-factor authentication ব্যবহার করুন।"
-        ),
-        "tool": "Proton VPN / WireGuard",
-        "link": "https://www.wireguard.com/",
-        "safety": "নিজের ডিভাইস ও নেটওয়ার্কের নিরাপত্তায় ব্যবহার করুন।"
+        "safety": "কারো সাথে টু-ফ্যাক্টর ব্যাকআপ কোড শেয়ার করবেন না।"
     },
     {
         "category": "💻 ETHICAL HACKING",
-        "title": "Ethical Hacking শেখার সঠিক রোডম্যাপ",
+        "title": "Web Application Penetration Testing Roadmap",
         "content": (
-            "Ethical hacking শিখতে প্রথমে networking, Linux, "
-            "HTTP, DNS ও web application-এর ভিত্তি বুঝুন।\n\n"
-            "📌 ধাপ ১: TCP/IP ও networking basics।\n"
-            "📌 ধাপ ২: Linux terminal ও file permissions।\n"
-            "📌 ধাপ ৩: Python scripting।\n"
-            "📌 ধাপ ৪: Web security ও OWASP Top 10।\n"
-            "📌 ধাপ ৫: অনুমোদিত lab-এ vulnerability testing।\n\n"
-            "অনুমতি ছাড়া কোনো ওয়েবসাইট বা নেটওয়ার্ক পরীক্ষা করবেন না।"
+            "ওয়েব সিকিউরিটি ও পেনেট্রেশন টেস্টিং শেখার সঠিক নিয়মাবলী:\n\n"
+            "📌 Step 1: HTTP/HTTPS রিকোয়েস্ট ও রেসপন্স অ্যানালাইসিস।\n"
+            "📌 Step 2: Burp Suite দিয়ে ট্রাফিক ইন্টারসেপ্ট ও টেস্টিং।\n"
+            "📌 Step 3: OWASP Top 10 বাগস (SQLi, XSS, CSRF, IDOR)।\n"
+            "📌 Step 4: লিগ্যাল বাউন্টি প্ল্যাটফর্মে (HackerOne/Bugcrowd) প্র্যাকটিস।"
         ),
         "tool": "PortSwigger Web Security Academy",
         "link": "https://portswigger.net/web-security",
-        "safety": "শুধু অনুমোদিত ল্যাব ও সিস্টেমে অনুশীলন করুন।"
+        "safety": "অনুমতি ছাড়া কোনো ওয়েবসাইট বা সার্ভারে অ্যাটাক দেওয়া নিষিদ্ধ।"
     },
     {
-        "category": "🌐 NETWORK SECURITY",
-        "title": "Nmap Network Scanning Fundamentals",
+        "category": "🐍 PYTHON SECURITY",
+        "title": "Python Cyber Automation & Threat Scanning",
         "content": (
-            "Nmap নেটওয়ার্কে host discovery এবং service auditing-এর "
-            "জন্য বহুল ব্যবহৃত একটি ওপেন-সোর্স টুল।\n\n"
-            "শিখুন:\n"
-            "• IP address ও subnet কী।\n"
-            "• TCP এবং UDP-এর পার্থক্য।\n"
-            "• Port ও service কীভাবে কাজ করে।\n"
-            "• Scan result কীভাবে ব্যাখ্যা করতে হয়।\n\n"
-            "নিজের lab বা অনুমোদিত নেটওয়ার্কে পরীক্ষা করুন।"
+            "পাইথন দিয়ে ডিফেন্সিভ সাইবার সিকিউরিটি ও অটোমেশন টুলস তৈরি শিখুন:\n\n"
+            "• Python Requests & BeautifulSoup দিয়ে ডেটা স্ক্র্যাপিং।\n"
+            "• Socket প্রোগামিং দিয়ে পোর্ট ও সার্ভিস চেকিং।\n"
+            "• Telegram Bot API দিয়ে রিয়েল-টাইম সিকিউরিটি অ্যালার্ট।"
         ),
-        "tool": "Nmap",
-        "link": "https://nmap.org/book/",
-        "safety": "অনুমতি ছাড়া public IP scan করবেন না।"
-    },
-    {
-        "category": "🧪 WEB SECURITY",
-        "title": "SQL Injection প্রতিরোধের উপায়",
-        "content": (
-            "SQL Injection ঘটে যখন user input অনিরাপদভাবে "
-            "database query-তে যুক্ত করা হয়।\n\n"
-            "প্রতিরোধ:\n"
-            "✅ Parameterized queries ব্যবহার করুন।\n"
-            "✅ Database account-এ minimum permissions দিন।\n"
-            "✅ Input validation ও error handling করুন।\n"
-            "✅ Database credentials source code-এ রাখবেন না।\n"
-            "✅ নিরাপদ test environment-এ security test করুন।"
-        ),
-        "tool": "OWASP SQL Injection Guide",
-        "link": "https://owasp.org/www-community/attacks/SQL_Injection",
-        "safety": "শুধু নিজের অ্যাপ বা অনুমোদিত lab-এ পরীক্ষা করুন।"
-    },
-    {
-        "category": "🧪 WEB SECURITY",
-        "title": "XSS Vulnerability ও Browser Security",
-        "content": (
-            "Cross-Site Scripting বা XSS-এর মাধ্যমে অনিরাপদ "
-            "ওয়েব পেজে ক্ষতিকর script চালানো সম্ভব হতে পারে।\n\n"
-            "প্রতিরোধের কৌশল:\n"
-            "• Context-aware output encoding।\n"
-            "• নিরাপদ template rendering।\n"
-            "• Content Security Policy (CSP)।\n"
-            "• Untrusted HTML sanitize করা।\n"
-            "• Dependency নিয়মিত আপডেট করা।"
-        ),
-        "tool": "OWASP Cross Site Scripting",
-        "link": "https://owasp.org/www-community/attacks/xss/",
-        "safety": "নিজস্ব অ্যাপ ও অনুমোদিত security lab-এ শিখুন।"
-    },
-    {
-        "category": "🐍 PYTHON PROGRAMMING",
-        "title": "Python শেখার Beginner Roadmap",
-        "content": (
-            "Python দিয়ে automation, web development, data analysis "
-            "ও defensive security tools তৈরি করা যায়।\n\n"
-            "শুরু করুন:\n"
-            "১. Variables, strings ও numbers。\n"
-            "২. If/else এবং loops।\n"
-            "৩. Functions ও modules।\n"
-            "৪. Lists, dictionaries ও sets।\n"
-            "৫. Exceptions ও file handling।\n"
-            "৬. Requests, JSON ও API basics।\n"
-            "৭. ছোট automation project তৈরি করুন।"
-        ),
-        "tool": "Official Python Tutorial",
+        "tool": "Python Official Standard Documentation",
         "link": "https://docs.python.org/3/tutorial/",
-        "safety": "API key ও password কখনো public repository-তে রাখবেন না।"
-    },
-    {
-        "category": "📱 TERMUX & LINUX",
-        "title": "Termux নিরাপদভাবে ব্যবহার করার টিপস",
-        "content": (
-            "Termux হলো Android-এ Linux command-line environment "
-            "ব্যবহারের একটি উপায়।\n\n"
-            "দরকারি অভ্যাস:\n"
-            "✅ অফিসিয়াল ও বিশ্বস্ত উৎস থেকে Termux ইনস্টল করুন।\n"
-            "✅ Package নিয়মিত update করুন।\n"
-            "✅ অপরিচিত shell script চালানোর আগে পড়ে নিন।\n"
-            "✅ অপ্রয়োজনীয় storage permission দেবেন না।\n"
-            "✅ গুরুত্বপূর্ণ ফাইলের backup রাখুন।\n\n"
-            "Root ছাড়া অনেক development ও scripting কাজ করা যায়।"
-        ),
-        "tool": "Termux Documentation",
-        "link": "https://termux.dev/",
-        "safety": "অপরিচিত script-কে অন্ধভাবে root permission দেবেন না।"
-    },
-    {
-        "category": "🔑 PASSWORD SECURITY",
-        "title": "Strong Password ও 2FA Protection",
-        "content": (
-            "একটি অ্যাকাউন্টের password অন্য অ্যাকাউন্টে পুনরায় "
-            "ব্যবহার করলে credential leak-এর ঝুঁকি বাড়ে।\n\n"
-            "🔒 প্রতিটি অ্যাকাউন্টে আলাদা password রাখুন।\n"
-            "🔒 Password manager ব্যবহার করতে পারেন।\n"
-            "🔒 Authenticator-based 2FA বা passkey চালু করুন।\n"
-            "🔒 Recovery code নিরাপদ স্থানে রাখুন।\n"
-            "🔒 সন্দেহজনক login alert পরীক্ষা করুন।"
-        ),
-        "tool": "CISA Secure Our World",
-        "link": "https://www.cisa.gov/secure-our-world",
-        "safety": "কাউকে OTP, recovery code বা password দেবেন না।"
-    },
-    {
-        "category": "🦠 MALWARE DEFENSE",
-        "title": "Ransomware থেকে ফাইল সুরক্ষিত রাখুন",
-        "content": (
-            "Ransomware গুরুত্বপূর্ণ ফাইল ব্যবহার-অযোগ্য করে দিতে পারে। "
-            "প্রতিরোধের জন্য layered security জরুরি।\n\n"
-            "• Offline বা immutable backup রাখুন।\n"
-            "• Operating system আপডেট রাখুন।\n"
-            "• অজানা attachment খুলবেন না।\n"
-            "• Standard user account ব্যবহার করুন।\n"
-            "• Restore করার আগে backup যাচাই করুন।\n"
-            "• Incident হলে আক্রান্ত ডিভাইস নেটওয়ার্ক থেকে বিচ্ছিন্ন করুন।"
-        ),
-        "tool": "CISA Stop Ransomware",
-        "link": "https://www.cisa.gov/stopransomware",
-        "safety": "সন্দেহজনক ফাইল নিরাপদ পরিবেশ ছাড়া চালাবেন না।"
-    },
-    {
-        "category": "📡 NETWORKING",
-        "title": "DNS, IP Address ও HTTPS সহজ ব্যাখ্যা",
-        "content": (
-            "IP address নেটওয়ার্কে একটি device বা interface-কে "
-            "চিহ্নিত করতে সাহায্য করে। DNS domain name-কে IP address-এ "
-            "resolve করে। HTTPS browser ও server-এর মধ্যে "
-            "encrypted connection তৈরি করে।\n\n"
-            "অনুশীলন করুন:\n"
-            "• Private ও public IP-এর পার্থক্য।\n"
-            "• DNS resolver কীভাবে কাজ করে।\n"
-            "• TLS certificate যাচাই।\n"
-            "• Router ও firewall-এর ভূমিকা।"
-        ),
-        "tool": "Cloudflare Learning Center",
-        "link": "https://www.cloudflare.com/learning/",
-        "safety": "Public Wi-Fi-তে সংবেদনশীল কাজের সময় সতর্ক থাকুন।"
-    },
-    {
-        "category": "🔍 OSINT & PRIVACY",
-        "title": "OSINT ও Digital Footprint Protection",
-        "content": (
-            "OSINT হলো আইনসম্মতভাবে প্রকাশ্য উৎস থেকে তথ্য সংগ্রহ "
-            "ও বিশ্লেষণ করার পদ্ধতি। এটি security research-এ কাজে লাগে।\n\n"
-            "নিজের privacy রক্ষায়:\n"
-            "• Public profile-এর তথ্য পর্যালোচনা করুন।\n"
-            "• ছবি শেয়ার করার আগে location metadata দেখুন।\n"
-            "• অপ্রয়োজনীয় app permissions বন্ধ করুন।\n"
-            "• পুরোনো public posts পরীক্ষা করুন।\n"
-            "• অন্যের ব্যক্তিগত তথ্য অনুমতি ছাড়া প্রকাশ করবেন না।"
-        ),
-        "tool": "OSINT Framework",
-        "link": "https://osintframework.com/",
-        "safety": "গোপনীয়তা, সম্মতি ও প্রযোজ্য আইন মেনে চলুন।"
-    },
-    {
-        "category": "🧰 SECURITY TOOLS",
-        "title": "Wireshark দিয়ে Network Traffic শেখা",
-        "content": (
-            "Wireshark packet capture ও protocol analysis-এর "
-            "জন্য ব্যবহৃত একটি network analyzer।\n\n"
-            "শিখতে পারেন:\n"
-            "• Packet, frame ও protocol।\n"
-            "• TCP handshake।\n"
-            "• DNS request ও response।\n"
-            "• TLS traffic-এর মৌলিক ধারণা।\n"
-            "• Network troubleshooting。\n\n"
-            "Capture করার আগে নেটওয়ার্কের মালিকের অনুমতি নিন।"
-        ),
-        "tool": "Wireshark",
-        "link": "https://www.wireshark.org/docs/",
-        "safety": "অন্যের private traffic অনুমতি ছাড়া capture করবেন না।"
-    },
-    {
-        "category": "🌍 WEB DEVELOPMENT",
-        "title": "HTML, CSS ও JavaScript দিয়ে ওয়েবসাইট",
-        "content": (
-            "একটি সুন্দর responsive website তৈরিতে তিনটি মূল প্রযুক্তি "
-            "গুরুত্বপূর্ণ:\n\n"
-            "HTML: পেজের structure।\n"
-            "CSS: layout, color ও responsive design。\n"
-            "JavaScript: interaction ও dynamic behavior।\n\n"
-            "শুরুতে একটি portfolio, calculator বা personal dashboard "
-            "তৈরি করুন। পরে API integration ও accessibility শিখুন।"
-        ),
-        "tool": "MDN Web Docs",
-        "link": "https://developer.mozilla.org/",
-        "safety": "User input ও API data নিরাপদভাবে handle করুন।"
-    },
-    {
-        "category": "🤖 AI & AUTOMATION",
-        "title": "Python দিয়ে নিরাপদ Automation",
-        "content": (
-            "Python দিয়ে repetitive কাজ স্বয়ংক্রিয় করা যায়।\n\n"
-            "Project idea:\n"
-            "• নিজের ফাইল গুছিয়ে রাখার script।\n"
-            "• Website uptime checker。\n"
-            "• CSV report generator。\n"
-            "• Telegram notification bot。\n"
-            "• নিজের server-এর log analyzer。\n\n"
-            "Error handling, logging ও environment variables "
-            "ব্যবহার করতে শিখুন।"
-        ),
-        "tool": "Python Logging Documentation",
-        "link": "https://docs.python.org/3/library/logging.html",
-        "safety": "Automation-এ rate limits ও service terms মানুন।"
-    },
-    {
-        "category": "🧪 SECURITY LAB",
-        "title": "OWASP ZAP দিয়ে Web Security Testing",
-        "content": (
-            "OWASP ZAP একটি ওপেন-সোর্স web application security "
-            "testing tool। Beginner-রা এর passive scanning ও "
-            "training lab দিয়ে শুরু করতে পারেন।\n\n"
-            "প্রথমে নিজের local test application চালান।\n"
-            "Scan result যাচাই করে false positive বুঝুন।\n"
-            "প্রতিটি finding-এর remediation শিখুন।\n"
-            "Production website পরীক্ষা করতে লিখিত অনুমতি নিন।"
-        ),
-        "tool": "OWASP ZAP",
-        "link": "https://www.zaproxy.org/",
-        "safety": "অনুমোদিত অ্যাপেই active testing করুন।"
+        "safety": "নিজের সোর্স কোডে এপিআই কি প্রকাশ করবেন না।"
     }
 ]
 
@@ -462,7 +246,7 @@ def telegram_api(method, payload):
 
 def send_telegram_post(item):
     """
-    Send one GIF and then the complete formatted post per message.
+    Send one professional animated GIF and then the complete formatted post per message.
     """
 
     title = html.escape(item["title"])
@@ -473,6 +257,7 @@ def send_telegram_post(item):
     safety = html.escape(item["safety"])
     developer = html.escape(DEVELOPER)
     group_link = html.escape(GROUP_LINK, quote=True)
+    private_group = html.escape(PRIVATE_GROUP_LINK, quote=True)
 
     now = datetime.now(
         timezone(timedelta(hours=6))
@@ -481,7 +266,7 @@ def send_telegram_post(item):
     message = (
         "━━━━━━━━━━━━━━━━━━━━\n"
         "🛡️ <b>CYBER TEAM HELP</b>\n"
-        "⚡ <b>DAILY KNOWLEDGE & SECURITY HUB</b>\n"
+        "⚡ <b>ADVANCED KNOWLEDGE & SECURITY HUB</b>\n"
         "━━━━━━━━━━━━━━━━━━━━\n\n"
         f"{category}\n\n"
         f"📌 <b>{title}</b>\n\n"
@@ -495,7 +280,10 @@ def send_telegram_post(item):
         "━━━━━━━━━━━━━━━━━━━━\n"
         f"🕒 <b>প্রকাশের সময়:</b> {now}\n"
         f"👨‍💻 <b>Developer:</b> {developer}\n"
-        f"👥 <a href=\"{group_link}\">JOIN CYBER TEAM HELP</a>\n"
+        f"👥 <a href=\"{group_link}\">JOIN PUBLIC GROUP</a>\n"
+        f"🔒 <a href=\"{private_group}\">JOIN PRIVATE VIP GROUP</a>\n"
+        "━━━━━━━━━━━━━━━━━━━━\n"
+        f"💬 <b>কাজের জন্য ইনবক্সে মেসেজ দিন: {developer}</b>\n"
         "━━━━━━━━━━━━━━━━━━━━\n"
         "💡 <i>শিখুন • নিরাপদ থাকুন • দায়িত্বশীল হোন</i>"
     )
@@ -510,7 +298,7 @@ def send_telegram_post(item):
                 "animation": selected_gif,
                 "caption": (
                     "🛡️ <b>CYBER TEAM HELP</b>\n"
-                    "📚 Cybersecurity • Programming • Privacy\n"
+                    "📚 Cybersecurity • Tools • Privacy\n"
                     f"👨‍💻 {developer}"
                 ),
                 "parse_mode": "HTML"
@@ -638,7 +426,7 @@ body {
       var(--bg);
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-.container { width: 100%; max-width: 650px; }
+.container { width: 100%; max-width: 680px; }
 .header { text-align: center; margin-bottom: 22px; }
 .logo {
     width: 72px; height: 72px; margin: 0 auto 14px;
@@ -772,22 +560,26 @@ button {
             </button>
         </form>
         <p style="font-size:12px;color:var(--muted);line-height:1.7">
-            Pause করলে নতুন পোস্ট পাঠানো বন্ধ হবে। Start করলে
-            ইঞ্জিন আবার কাজ শুরু করবে।
+            Pause করলে নতুন পোস্ট পাঠানো বন্ধ হবে। Start করলে ইঞ্জিন আবার কাজ শুরু করবে।
         </p>
     </section>
 
     <section class="card">
-        <h2 class="section-title">🌐 OFFICIAL COMMUNITY</h2>
+        <h2 class="section-title">🌐 OFFICIAL TOOLS & COMMUNITY</h2>
+        <a class="link" href="https://cyber-team-help-all-in-one.vercel.app/" target="_blank" rel="noopener">
+            🚀 CTH All-in-One Hub
+        </a>
+        <a class="link" href="https://unlimited-text-generator-cth-2esh.vercel.app/" target="_blank" rel="noopener">
+            ⚡ Unlimited Text Generator
+        </a>
+        <a class="link" href="https://link-to-id-hack-tolls-cth.vercel.app/" target="_blank" rel="noopener">
+            🛠️ Link & Account Security Tools
+        </a>
         <a class="link" href="{{ group_link }}" target="_blank" rel="noopener">
-            👥 JOIN TELEGRAM GROUP
+            👥 JOIN PUBLIC TELEGRAM GROUP
         </a>
-        <a class="link" href="https://owasp.org/" target="_blank" rel="noopener">
-            🛡️ OWASP SECURITY RESOURCES
-        </a>
-        <a class="link" href="https://portswigger.net/web-security"
-           target="_blank" rel="noopener">
-            🧪 WEB SECURITY ACADEMY
+        <a class="link" href="{{ private_group_link }}" target="_blank" rel="noopener">
+            🔒 JOIN PRIVATE VIP GROUP
         </a>
     </section>
 
@@ -795,7 +587,7 @@ button {
         🛡️ CYBER TEAM HELP — KNOWLEDGE FOR EVERYONE<br>
         Built with Python & Flask<br>
         Credit: <span class="accent">{{ developer }}</span><br>
-        <small>Educational content • Privacy • Responsible Security</small>
+        <small>কাজের জন্য ইনবক্সে মেসেজ দিন: {{ developer }}</small>
     </footer>
 </div>
 </body>
@@ -819,6 +611,7 @@ def home():
         project_name=PROJECT_NAME,
         developer=DEVELOPER,
         group_link=GROUP_LINK,
+        private_group_link=PRIVATE_GROUP_LINK,
         state=state,
         interval_minutes=POST_INTERVAL // 60,
         topic_count=len(POSTS),
@@ -894,4 +687,4 @@ if __name__ == "__main__":
         port=port,
         debug=False,
         use_reloader=False
-        )
+    )
